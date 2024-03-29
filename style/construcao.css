@@ -1,0 +1,160 @@
+/* Instanciando variáveis! */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root
+{
+    --white-principal: #FFFFFF;
+    --blue-button-clicado: aqua;
+    --clicado-link: purple;
+    --font-principal: "Montserrat";
+    --font-titulo: "Bebas Neue";
+}
+html, body
+{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background: rgb(97, 69, 169);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 9;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.navbar {
+    display: inline-block;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+}
+.div-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.logo {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+.texto-logo {
+    font-family: var(--font-titulo);
+    color: white;
+    margin-left: 5px;
+    margin-top: 55px;
+    font-size: 50px;
+}
+.navbar {
+    display: inline-block;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.item-texto {
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-principal);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.item-texto:hover {
+    text-decoration: none;
+    color: var(--blue-button-clicado);
+}
+
+.botao {
+    background-color: white;
+    font-size: 14px;
+    border: white solid 1px ;
+    color: black;
+    width: 112px;
+    height: 38px;
+    align-self: center;
+    justify-content: center;
+    padding: 7px 16px;
+    border-radius: 40px;
+    transition-duration: 0.6s;
+}
+
+.construcao {
+    background-color: #E4E8F4;
+    text-align: center;
+    display: block;
+}
+.imagem-construcao
+{
+    width: 30%;
+    height: 30%;
+    border-radius: 100px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.botao:hover {
+    /*text-shadow: 2px 2px 5px black;*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.1);
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.rodape {
+   flex-shrink: 0;
+   text-align: center;
+   background-image: linear-gradient(to right, #9846A0, #7282D7);
+}
+.rodape-logo {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 80px;
+    height: 80px;
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+.link-lista {   
+    font-family: var(--font-principal);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 1em;
+    color: var(--white-principal);
+    font-size: 16px;
+}
+
+.link-lista:hover {
+    color: var(--blue-button-clicado);
+}
+
+.link-lista:active {
+    color: var(--clicado-link);
+}
+.texto-rodape {
+    font-family: var(--font-principal);
+    height: 40px;
+    font-size: 14px;
+    color: var(--white-principal);
+}
+
